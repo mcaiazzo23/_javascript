@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Learn jQuery</title>
-        <style>
-            .red{color: red;}
-            .green{color: green;}
-        </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script>
-            $(document).ready(function() {
-               /* $('.myLink').on('mouseenter', function() {
-                    $('h1').addClass('red');
-                });     
-                $('.myLink').on('mouseleave', function() {
-                    $('h1').removeClass('red');
-                }); 
-                */
-                $('.myLink').click(function() {
-                    //$('h1').append('<h3>Hello World</h3>');
-                    $('h1').css('font-size','40px');
-                });
-            });
-        </script>
+        <title>jQuery Content Slider</title>        
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>        
+        <script src="js/script.js"></script>
     </head>
     <body>
-        <h1>Welcome Everyone</h1>
-        <a href="#" class="myLink">Click Me</a>
+        <div id="container">
+            <header>
+                <h1>jQuery Content Slider</h1>
+            </header>
+            <img src="img/prev-arrow.png" width="50" alt="Prev" id="prev">
+            <div id="slider">
+                <div class="slide active">
+                    <div class="slider-copy">
+                        <h2>Slider One</h2>
+                        <p>Pellentesque facilisis, ipsum eu commodo sollicitudin, nulla elit ultrices est, venenatis cursus nibh leo non sapien. Aenean vulputate sollicitudin nibh vitae vehicula. Vivamus placerat nibh fringilla interdum pulvinar. Mauris turpis quam, suscipit id odio at, maximus vulputate diam. Duis rutrum ultrices ultrices. Suspendisse potenti. Etiam vehicula dictum turpis a tristique. Integer ultricies quis nunc ut rutrum. Phasellus mollis euismod nisi, faucibus fringilla arcu dignissim id. Vivamus sem leo, lacinia ac lacus ultrices, dignissim tristique magna.</p>
+                    </div>
+                    <img src="img/gundam1.jpg">                    
+                </div>
+                <div class="slide">
+                    <div class="slider-copy">
+                        <h2>Slider Two</h2>
+                        <p>Pellentesque facilisis, ipsum eu commodo sollicitudin, nulla elit ultrices est, venenatis cursus nibh leo non sapien. Aenean vulputate sollicitudin nibh vitae vehicula. Vivamus placerat nibh fringilla interdum pulvinar. Mauris turpis quam, suscipit id odio at, maximus vulputate diam. Duis rutrum ultrices ultrices. Suspendisse potenti. Etiam vehicula dictum turpis a tristique. Integer ultricies quis nunc ut rutrum. Phasellus mollis euismod nisi, faucibus fringilla arcu dignissim id. Vivamus sem leo, lacinia ac lacus ultrices, dignissim tristique magna.</p>
+                    </div>
+                    <img src="img/gundam2.jpg">                    
+                </div>
+                <div class="slide">
+                    <div class="slider-copy">
+                        <h2>Slider Three</h2>
+                        <p>Pellentesque facilisis, ipsum eu commodo sollicitudin, nulla elit ultrices est, venenatis cursus nibh leo non sapien. Aenean vulputate sollicitudin nibh vitae vehicula. Vivamus placerat nibh fringilla interdum pulvinar. Mauris turpis quam, suscipit id odio at, maximus vulputate diam. Duis rutrum ultrices ultrices. Suspendisse potenti. Etiam vehicula dictum turpis a tristique. Integer ultricies quis nunc ut rutrum. Phasellus mollis euismod nisi, faucibus fringilla arcu dignissim id. Vivamus sem leo, lacinia ac lacus ultrices, dignissim tristique magna.</p>
+                    </div>
+                    <img src="img/gundam3.jpg">                    
+                </div>
+                <div class="slide">
+                    <div class="slider-copy">
+                        <h2>Slider Four</h2>
+                        <p>Pellentesque facilisis, ipsum eu commodo sollicitudin, nulla elit ultrices est, venenatis cursus nibh leo non sapien. Aenean vulputate sollicitudin nibh vitae vehicula. Vivamus placerat nibh fringilla interdum pulvinar. Mauris turpis quam, suscipit id odio at, maximus vulputate diam. Duis rutrum ultrices ultrices. Suspendisse potenti. Etiam vehicula dictum turpis a tristique. Integer ultricies quis nunc ut rutrum. Phasellus mollis euismod nisi, faucibus fringilla arcu dignissim id. Vivamus sem leo, lacinia ac lacus ultrices, dignissim tristique magna.</p>
+                    </div>
+                    <img src="img/gundam4.jpg">                    
+                </div>                
+                <div class="slide">
+                    <div class="slider-copy">
+                        <h2>Slider Five</h2>
+                        <p>Pellentesque facilisis, ipsum eu commodo sollicitudin, nulla elit ultrices est, venenatis cursus nibh leo non sapien. Aenean vulputate sollicitudin nibh vitae vehicula. Vivamus placerat nibh fringilla interdum pulvinar. Mauris turpis quam, suscipit id odio at, maximus vulputate diam. Duis rutrum ultrices ultrices. Suspendisse potenti. Etiam vehicula dictum turpis a tristique. Integer ultricies quis nunc ut rutrum. Phasellus mollis euismod nisi, faucibus fringilla arcu dignissim id. Vivamus sem leo, lacinia ac lacus ultrices, dignissim tristique magna.</p>
+                    </div>
+                    <img src="img/gundam5.jpg">                    
+                </div>                
+            </div>
+            <img src="img/next-arrow.png" width="50" alt="Next" id="next">
+        </div>
     </body>
 </html>
