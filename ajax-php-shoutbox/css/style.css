@@ -25,6 +25,7 @@ header {
 
 #shouts {
     height: 200px;
+    overflow-y: scroll;
     border: #333 1px solid;
     margin: 30px;
     padding: 15px;
